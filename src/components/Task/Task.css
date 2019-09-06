@@ -1,0 +1,81 @@
+.task {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-rows: 30% 1fr;
+    grid-template-columns: 1fr 20% 10%;
+    grid-template-areas:
+        "task-title task-bar task-complete-bar"
+        "task-text task-bar task-complete-bar";
+
+    border: 1px solid;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    padding: 30px;
+    margin: 10px 0;
+    height: 70px;
+}
+.task:hover {
+    background-color: #1f9d7f27;
+}
+.task:hover > .task__bar, .task:hover .task__complete-bar {
+    display: flex;
+}
+
+.task.completed {
+    background-color: #1f9d7f63;
+}
+
+.task__title {
+    grid-area: task-title;
+
+    text-decoration: underline;
+}
+
+.task__text {
+    grid-area: task-text;
+
+    display: flex;
+    align-items: center;
+}
+
+.task__bar {
+    grid-area: task-bar;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.task__bar .btn, .task__complete-bar .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid transparent;
+    margin-right: 5px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+}
+.task__bar .btn:hover, .task__complete-bar .btn:hover {
+    border: 3px solid;
+    cursor: pointer;
+}
+
+.task__complete-bar {
+    grid-area: task-complete-bar;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.task.completed .task__complete-bar {
+    display: flex;
+}
+.task.completed .task__complete-bar .btn {
+    border: 3px solid;
+}

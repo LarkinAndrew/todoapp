@@ -1,0 +1,19 @@
+.app-workplace {
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+}
+
+.empty-list {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px 0;
+    height: 70px;
+    opacity: 0.5;
+}
+.empty-list > div {
+    margin: auto;
+    text-align: center;
+    line-height: 70px;
+}

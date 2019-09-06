@@ -1,0 +1,82 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 999;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 40%;
+    height: 20%;
+    min-height: 200px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    pointer-events: auto;
+}
+.modal-window__close {
+    position: absolute;
+    top: -25px;
+    right: 0;
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-window__close:hover {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-window__header {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 5px 0 15px 0;
+    width: 100%;
+}
+.new-task-form {
+    width: 100%;
+}
+
+.new-task-form-title,
+.new-task-form-text,
+.new-task-form-btn {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+.new-task-form-title {
+    height: 30px;
+}
+.new-task-form-text {
+    height: 50px;
+}
+.new-task-form-btn {
+    width: 30%;
+    margin: auto;
+}

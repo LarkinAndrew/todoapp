@@ -1,0 +1,46 @@
+.app-header {
+    position: relative;
+}
+
+.app-header .logo {
+    background-color: #1f9d7f;
+    height: 80px;
+    color: white;
+    font-size: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-header .logo > div {
+    height: 100%;
+    margin: 5px 0 0 0;
+}
+
+.app-header__note {
+    font-size: 10px;
+    float: right;
+    margin-top: -5px;
+}
+
+.add-new-task {
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    border-radius: 30px;
+    color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    margin-top: -26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-new-task:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #1f9d7f;
+}
