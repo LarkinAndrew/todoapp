@@ -75,6 +75,7 @@
 }
 .new-task-form-text {
     height: 50px;
+    resize: none;
 }
 .new-task-form-btn {
     width: 30%;
