@@ -89,9 +89,9 @@ export class Task extends React.Component {
 
     render() {
         const { editTaskId } = this.props
-        const { id, title, text } = this.props.data
+        const { id } = this.props.data
 
-        if (editTaskId == id) {
+        if (editTaskId === id) {
             return this.renderEdit()
         } else {
             return this.renderView()
